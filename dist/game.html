@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <style>
+        canvas {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        #canvasParent {
+            width: 66vw;
+            height: 100vh;
+            float: left;
+            position: relative;
+
+            overflow: scroll;
+        }
+
+        #canvasParent > canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        #floorLayer {
+            z-index: -10;
+        }
+
+        #backgroundObjectLayer {
+            z-index: -8;
+        }
+
+        #entityLayer {
+            z-index: -6;
+        }
+
+        #foregroundObjectLayer {
+            z-index: -4;
+        }
+
+        #overlayLayer {
+            z-index: 0;
+        }
+
+        #controParent {
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="canvasParent">
+
+</div>
+
+<div id="controlParent">
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

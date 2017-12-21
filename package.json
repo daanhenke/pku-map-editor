@@ -1,0 +1,11 @@
+{
+  "name": "pokemon-universe-client-dev",
+  "version": "0.0.1",
+  "dependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  }
+}
